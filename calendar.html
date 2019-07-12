@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <script type="text/javascript" src="calendar.js"></script>
+      <style>
+      body fieldset input[type=checkbox]{
+          text-align: left;
+      }
+      body{
+          background-color: antiquewhite;
+      }
+      </style>
+    </head>
+    <body>
+        <fieldset>
+             <th>TrainerName:</th><input type ="text" name="name" id="name"><br/>
+             <th>Subject:</th><br />
+                        <input type="checkbox" name="sub1" value="maths"  id="sub1">maths<br/>
+                        <input type="checkbox" name="sub2" value="physics"  id="sub2">Physics</th><br/>
+                        <input type="checkbox" name="sub3" value="chemistry"id="sub3">chemistry</th><br/>
+                        <input type="checkbox" name="sub4" value="cse"      id="sub4">cse</th><br/>
+                        <input type="checkbox" name="sub5" value="english"  id="sub5">english</th><br/>
+                        <input type="checkbox" name="sub6" value="sports"   id="sub6">sports</th><br/>
+                        <input type="button"   name="save" value="save"  onclick="save()">
+                </fieldset>
+             <fieldset>
+                 <th>Class:</th><select id="classname" onchange="classname()">
+                           <option value="">--select--</option>
+                           <option value="class A">class A</option>
+                           <option value="class B">class B</option></select><br/>
+                 <th>Slot:</th><select id="time" onchange="time()">
+                        <option value="">--select--</option>
+                        <option value="8 to 9">8am to 9am</option>
+                        <option value="9 to 10">9am to 10am</option>
+                        <option value="11to 12">11am to 12pm</option>
+                        <option value="1 to 2">1pm to 2pm</option>
+                        <option value="2 to 3">2pm to 3pm</option>
+                        <option value="3 to 4">3pm to 4pm</option></select><br/>
+                 <th>Subject:</th><select id="sub" onchange="sub()">
+                        <option value="">--select--</option>
+                        <option value="maths">maths</option>
+                        <option value="Physics">physics</option>
+                        <option value="chemistry">chemistry</option>
+                        <option value="cse">cse</option>
+                        <option value="english">english</option>
+                        <option value="sports">sports</option></select></br>
+                 <th>Trainer:<input type="text" id="trname"></th>
+                 <input type="button" value="submit" id="submit" onclick="display()">
+              </fieldset>
+              <fieldset>
+                  <th>choose class:</th>
+                  <select id="chooseclass" onchange="chooseclass()">
+                        <option value="">--select--</option>
+                        <option value="class A">class A</option>
+                        <option value="class B">class B</option></select>
+                  <div id= 'msg'>
+
+                  </div>
+              </fieldset>
+    </body>
+</html>
