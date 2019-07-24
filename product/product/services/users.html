@@ -5,7 +5,7 @@
         </title>
         <script type="text/javascript">
         const getProd = ()=>{
-            const _url = 'http://localhost:1269/product';
+            const _url = 'http://localhost:1567/product';
             fetch(_url,{})
             .then(res=>res.json())
             .then(product=>{
@@ -34,7 +34,7 @@
         }
         const add = (name,price) =>{
             let quantity = 1;
-            let c_url = 'http://localhost:1269/cart/';
+            let c_url = 'http://localhost:1567/cart/';
             fetch(c_url + '/add',{
                 method : 'POST',
                 headers : {
@@ -51,7 +51,7 @@
     </head>
     <body onload="getProd()">
     <div>
-        <a href="cart.html"><img src="cart.png"></img></a>
+        <a href="cart.html"><img src="shop.png" width="50" height="50"></img></a>
     </div>
     <div id="users">
 

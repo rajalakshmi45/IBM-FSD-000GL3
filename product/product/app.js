@@ -25,6 +25,6 @@ server.use('/product',userRoutes);
 server.use('/cart',cartRoutes);
 
 // PORT Binding
-server.listen(1269,()=>{
-    console.log('Server started at 1269');
+server.listen(1567,()=>{
+    console.log('Server started at 1567');
 });
